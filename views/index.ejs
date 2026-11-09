@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <h1>MESSAGES:</h1>
+    <ol>
+      <% messages.forEach((message) => { %>
+        <li>
+         <a href="/messages/<%= message.id %>">Open</a>
+         <h3><%= message.creator %></h3>
+         <p><%= message.message %></p>
+        </li>
+      <% }); %>
+    </ol>
+
+    <button> Add Message </button>
+  </body>
+</html>
